@@ -28,7 +28,7 @@ const ImageList = [
     },
   ];
 
-const Hero = () => {
+const Hero = ({handleOrderPopup}) => {
     const [imageId,setImageId] = useState(Book2);
     const [title , setTitle] = useState('Life will forever be changed');
     const [description , setDescription] = useState('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, quibusdam!');
@@ -50,15 +50,25 @@ const bgImage = {
                 <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-4 sm:gap-8 mx-4">
                     {/* text content selection */}
                     <div className='flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1'>
-                        <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>
+                        <h1 
+                        data-aos="zoom-out"
+                        data-aos-duration="500"
+                        className='text-5xl sm:text-6xl lg:text-7xl font-bold'>
                             {title}
-                            <p className='bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary text-right text-sm to-blue'>by Anonymous</p>
                         </h1>
-                        <p className='text-sm'>
+                        <p 
+                        data-aos="slide-up"
+                        data-aos-duration="500"
+                        data-aos-delay="100"
+                        className='text-sm'>
                             {description}
                         </p>
                         <div>
-                            <button className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full mt-3'>order now</button>
+                            <button 
+                            onClick={handleOrderPopup}
+                            data-aos="zoom-in"
+                            data-aos-duration="500"
+                            className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full mt-3'>order now</button>
                         </div>
                     </div>
                     {/* image selection */}
@@ -66,6 +76,8 @@ const bgImage = {
                         {/* main image */}
                         <div className='h-[300px] sm:h-[450px] overflow-hidden'>
                             <img 
+                            data-aos="zoom-in"
+                            data-aos-once="true"
                             src={imageId} 
                             alt=""  
                             className="h-full min-w-auto object-contain mx-auto" />
@@ -75,9 +87,10 @@ const bgImage = {
                             {
                                 ImageList.map((data) => (
                                     <img 
+                                        data-aos="zoom-in"
+                                        data-aos-once="true"
                                         src={data.img} 
-                                        key={data.id}
-                                        alt={data.title} 
+                                        key={data.id} 
                                         className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"
                                         onClick={
                                             ()=>{

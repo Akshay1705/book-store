@@ -48,7 +48,9 @@ const AllBooks = () => {
     <div className='py-10 flex justify-center items-center'>
       <div className="container placeholder-gray-100">
         {/* header */}
-        <div className="text-center mb-20 max-w-[400px] mx-auto">
+        <div 
+        data-aos="slide-up"
+        className="text-center mb-20 max-w-[400px] mx-auto">
           <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mb-2">
           Top books For You
           </p>
@@ -56,7 +58,9 @@ const AllBooks = () => {
           <p className="text-xs text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quas fugit quasi vitae error explicabo sapiente. Incidunt officiis consectetur aliquid.</p>
         </div>
         {/* books grid */}
-        <div>
+        <div 
+        data-aos="slide-up"
+        >
           <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-items-center gap-4 '>
             {
               BooksData.map((book) => (

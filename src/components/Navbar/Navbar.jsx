@@ -37,7 +37,7 @@ const DropdownLinks = [
       link: "/#",
     },
   ];
-const Navbar = () => {
+const Navbar = ({handleOrderPopup}) => {
   return (
     <>
     <div className='sticky top-0 z-50 shadow-lg dark:shadow-[0_1px_4px_gray] bg-white dark:bg-gray-900 dark:text-white duration-300'>
@@ -89,7 +89,9 @@ const Navbar = () => {
                         </li>
                     </ul>
                         {/* button section */}
-                        <button className='bg-gradient-to-r from-blue-600 to-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 hover:scale-105 gap-3 flex items-center'>
+                        <button 
+                        onClick={handleOrderPopup}
+                        className='bg-gradient-to-r from-blue-600 to-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 hover:scale-105 gap-3 flex items-center'>
                             Order
                             <FaCartShopping className='text-xl text-white drop-shodow-sm cursor-pointer' />
                         </button>

@@ -84,7 +84,9 @@ var settings = {
     <div className='flex items-center justify-center py-10'>
         <div className="container">
             {/* header */}
-            <div className="text-center mb-20 max-w-[400px] mx-auto">
+            <div 
+            data-aos="slide-up"
+            className="text-center mb-20 max-w-[400px] mx-auto">
                 <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mb-2">
                 What Our Customers Says
                 </p>
@@ -92,7 +94,9 @@ var settings = {
                 <p className="text-xs text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quas fugit quasi vitae error explicabo sapiente. Incidunt officiis consectetur aliquid.</p>
             </div>
             {/* testimonials cards */}
-            <div>
+            <div
+            data-aos="zoom-in"
+            >
                 {/* slider */}
                 <Slider {...settings}>
                 {testimonialData.map((data) => {

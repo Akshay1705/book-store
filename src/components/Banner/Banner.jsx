@@ -11,12 +11,15 @@ const Banner = () => {
                 {/* image section */}
                 <div>
                     <img 
+                    data-aos="zoom-in"
                     src={libraryImage} 
                     alt="" 
                     className='max-w-[400px] block mx-auto h-[350px] w-full drop-shadow-[-10px_10px_12px_rgba(0,0,0,1)] object-cover'/>
                 </div>
                 {/* text section */}
-                <div className='flex flex-col justify-center gap-6 sm:pt-0 text-center sm:text-left'>
+                <div 
+                data-aos="slide-up"
+                className='flex flex-col justify-center gap-6 sm:pt-0 text-center sm:text-left'>
                     <h1 className='text-3xl sm:text-4xl justify-center font-bold'>
                         Library at your fingertips
                     </h1>
