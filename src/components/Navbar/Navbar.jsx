@@ -91,7 +91,7 @@ const Navbar = ({handleOrderPopup}) => {
                         {/* button section */}
                         <button 
                         onClick={handleOrderPopup}
-                        className='bg-gradient-to-r from-blue-600 to-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 hover:scale-105 gap-3 flex items-center'>
+                        className='bg-gradient-to-r from-primary to-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-secondary transition-all duration-200 hover:scale-105 gap-3 flex items-center'>
                             Order
                             <FaCartShopping className='text-xl text-white drop-shodow-sm cursor-pointer' />
                         </button>
