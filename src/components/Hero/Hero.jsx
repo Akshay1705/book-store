@@ -5,28 +5,29 @@ import Book2 from '../../assets/books/book2.jpg'
 import vector from '../../assets/website/blue-pattern.png'
 
 const ImageList = [
-    {
-      id: 1,
-      img: Book1,
-      title: "Who's there",
-      description:
-        "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 2,
-      img: Book2,
-      title: "His Life will forever be Changed",
-      description:
-        "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 4,
-      img: Book3,
-      title: "Lost Boy",
-      description:
-        "Lost Boy, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-  ];
+  {
+    id: 1,
+    img: Book1,
+    title: "Who's There",
+    description:
+      "A gripping tale of mystery and suspense that explores the unknown. When a strange knock disrupts a quiet night, a journey into fear and discovery begins.",
+  },
+  {
+    id: 2,
+    img: Book2,
+    title: "His Life Will Forever Be Changed",
+    description:
+      "An emotional story of transformation and hope. Follow the journey of a man whose life takes an unexpected turn, revealing the true meaning of resilience.",
+  },
+  {
+    id: 4,
+    img: Book3,
+    title: "Lost Boy",
+    description:
+      "A haunting yet inspiring narrative about a boy's search for identity and belonging. Through trials and revelations, he discovers the strength to forge his own path.",
+  },
+];
+
 
 const Hero = ({handleOrderPopup}) => {
     const [imageId,setImageId] = useState(Book2);
