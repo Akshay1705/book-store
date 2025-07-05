@@ -31,8 +31,8 @@ const ImageList = [
 
 const Hero = ({handleOrderPopup}) => {
     const [imageId,setImageId] = useState(Book2);
-    const [title , setTitle] = useState('Life will forever be changed');
-    const [description , setDescription] = useState('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, quibusdam!');
+    const [title , setTitle] = useState('His Life Will Forever Be Changed');
+    const [description , setDescription] = useState('An emotional story of transformation and hope. Follow the journey of a man whose life takes an unexpected turn, revealing the true meaning of resilience.');
 
 const bgImage = {
     backgroundImage: `url(${vector})`,
@@ -65,11 +65,14 @@ const bgImage = {
                             {description}
                         </p>
                         <div>
-                            <button 
-                            onClick={handleOrderPopup}
-                            data-aos="zoom-in"
-                            data-aos-duration="500"
-                            className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full mt-3'>order now</button>
+                        <button 
+                        onClick={handleOrderPopup}
+                        data-aos="zoom-in"
+                        data-aos-duration="500"
+                        className="bg-primary hover:bg-opacity-90 transform hover:scale-105 transition duration-300 text-white py-2 px-6 rounded-full mt-3 shadow-md"
+                        >
+                        Order Now
+                        </button>
                         </div>
                     </div>
                     {/* image selection */}
