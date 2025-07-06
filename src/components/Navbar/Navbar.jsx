@@ -31,7 +31,7 @@ const Menu = [
 const Navbar = ({handleOrderPopup}) => {
   return (
     <>
-    <div className='sticky top-0 z-50 shadow-lg dark:shadow-[0_1px_4px_gray] bg-white dark:bg-gray-900 dark:text-white duration-300'>
+    <div className='sticky top-0 z-50 shadow-lg dark:shadow-[0_1px_4px_gray] bg-green-200 dark:bg-gray-900 dark:text-white duration-300'>
         <div className="py-3 max-w-screen-xl mx-auto">
             <div className="flex justify-between items-center px-4">
                 <div>
