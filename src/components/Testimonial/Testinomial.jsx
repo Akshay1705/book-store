@@ -2,43 +2,44 @@ import React from 'react'
 import Slider from "react-slick";
 
 const testimonialData = [
-    {
-      id: 1,
-      name: "— Aarav Mehta",
-      text: "Absolutely love this bookstore! The collection is diverse and always up-to-date with the latest releases. My order arrived quickly and in perfect condition. Will definitely keep coming back for more!",
-      img: "https://picsum.photos/101/101",
-    },
-    {
-      id: 1,
-      name: "— Ritika Sharma",
-      text: "I was blown away by how easy it was to find what I was looking for. The recommendations were spot-on, and the book summaries helped me choose the right reads. Great design and smooth experience!",
-      img: "https://picsum.photos/102/102",
-    },
-    {
-      id: 1,
-      name: "Sachin Tendulkar",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-      img: "https://picsum.photos/103/103",
-    },
-    {
-      id: 1,
-      name: "Sachin Tendulkar",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-      img: "https://picsum.photos/103/103",
-    },
-    {
-      id: 1,
-      name: "Sachin Tendulkar",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-      img: "https://picsum.photos/103/103",
-    },
-    {
-      id: 1,
-      name: "Sachin Tendulkar",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-      img: "https://picsum.photos/103/103",
-    },
+  {
+    id: 1,
+    name: "— Aarav Mehta",
+    text: "Absolutely love this adventure bookstore! The collection is wild and thrilling — from Everest climbs to jungle mysteries. Fast delivery and top-notch quality.",
+    img: "https://picsum.photos/seed/aarav/101",
+  },
+  {
+    id: 2,
+    name: "— Ritika Sharma",
+    text: "The moment I saw ‘Into the Icy Abyss’ on the homepage, I knew I had to subscribe. Seamless experience, powerful stories — highly recommended!",
+    img: "https://picsum.photos/seed/ritika/102",
+  },
+  {
+    id: 3,
+    name: "— Kabir Malhotra",
+    text: "Each issue feels like a real expedition. I love flipping through pages with that fresh magazine scent — it’s like holding an adventure in my hands.",
+    img: "https://picsum.photos/seed/kabir/103",
+  },
+  {
+    id: 4,
+    name: "— Aanya Patel",
+    text: "Subscribed to the yearly plan and never looked back. Their magazine quality, delivery, and story selection are unmatched!",
+    img: "https://picsum.photos/seed/aanya/104",
+  },
+  {
+    id: 5,
+    name: "— Viraj Singh",
+    text: "I collect every edition. The covers, the maps, the stories — it's like a coffee-table travelogue. Perfect for adventure lovers!",
+    img: "https://picsum.photos/seed/viraj/105",
+  },
+  {
+    id: 6,
+    name: "— Priya Desai",
+    text: "Fast shipping, beautiful prints, and such captivating themes! It’s not just reading — it’s an experience.",
+    img: "https://picsum.photos/seed/priya/106",
+  },
 ];
+
 
 const Testinomial = () => {
     // settings for the slider
@@ -81,13 +82,13 @@ var settings = {
     ],
   };
   return (
-    <div className='flex items-center justify-center py-10'>
+    <div className='flex items-center justify-center py-10 bg-green-100 dark:bg-gray-950 dark:text-blue-600'>
         <div className="container">
             {/* header */}
             <div 
             data-aos="slide-up"
             className="text-center mb-20 max-w-[400px] mx-auto">
-                <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mb-2">
+                <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-green-700 dark:from-blue-700  to-green-500 dark:to-blue-500 mb-2">
                 What Our Customers Says
                 </p>
                 <h1 className="text-3xl font-bold">Testinomials</h1>

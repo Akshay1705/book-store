@@ -1,56 +1,46 @@
 import {useState} from 'react'
-import Book1 from '../../assets/books/book1.jpg'
-import Book3 from '../../assets/books/book3.jpg'
+import Book1 from '../../assets/books/book1.png'
 import Book2 from '../../assets/books/book2.jpg'
-import vector from '../../assets/website/blue-pattern.png'
+import Book3 from '../../assets/books/book3.webp'
 
 const ImageList = [
   {
     id: 1,
     img: Book1,
-    title: "Who's There",
+    title: "Into the Icy Abyss",
     description:
-      "A gripping tale of mystery and suspense that explores the unknown. When a strange knock disrupts a quiet night, a journey into fear and discovery begins.",
+      "Trapped beneath Everest’s deadly icefall after a catastrophic avalanche, a seasoned mountaineer fights against nature and time to survive the ultimate descent into the unknown.",
   },
   {
     id: 2,
     img: Book2,
-    title: "His Life Will Forever Be Changed",
+    title: "Adventure",
     description:
-      "An emotional story of transformation and hope. Follow the journey of a man whose life takes an unexpected turn, revealing the true meaning of resilience.",
+      "Adventure is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.",
   },
   {
     id: 4,
     img: Book3,
-    title: "Lost Boy",
+    title: "The Famous Five",
     description:
-      "A haunting yet inspiring narrative about a boy's search for identity and belonging. Through trials and revelations, he discovers the strength to forge his own path.",
+      "The Famous Five follows four children and their loyal dog as they dive into thrilling mysteries and daring adventures. From hidden treasure to secret passages, they uncover danger and excitement wherever they go. A classic tale of friendship, courage, and childhood discovery.",
   },
 ];
 
 
 const Hero = ({handleOrderPopup}) => {
     const [imageId,setImageId] = useState(Book2);
-    const [title , setTitle] = useState('His Life Will Forever Be Changed');
-    const [description , setDescription] = useState('An emotional story of transformation and hope. Follow the journey of a man whose life takes an unexpected turn, revealing the true meaning of resilience.');
-
-const bgImage = {
-    backgroundImage: `url(${vector})`,
-    backgroundPostiton: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    width: '100%',
-  };
+    const [title , setTitle] = useState('Adventure');
+    const [description , setDescription] = useState('Adventure is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.');
   return (
     <>
         <div
-            className='min-h-[550px] sm:min-h-[650px] bg-gray-200 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200'
-            style={bgImage}
+            className='min-h-[550px] sm:min-h-[650px] bg-green-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200'
         >
-            <div className="container">
-                <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-4 sm:gap-8 mx-4">
+            <div className="container mt-0 pt-0">
+                <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-4 sm:gap-8 mt-2">
                     {/* text content selection */}
-                    <div className='flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1'>
+                    <div className='flex flex-col justify-center gap-4 pt-6 sm:pt-0 text-center sm:text-left order-2 sm:order-1'>
                         <h1 
                         data-aos="zoom-out"
                         data-aos-duration="500"
@@ -69,7 +59,7 @@ const bgImage = {
                         onClick={handleOrderPopup}
                         data-aos="zoom-in"
                         data-aos-duration="500"
-                        className="bg-primary hover:bg-opacity-90 transform hover:scale-105 transition duration-300 text-white py-2 px-6 rounded-full mt-3 shadow-md"
+                        className="bg-green-600 dark:bg-blue-600 hover:bg-opacity-90 transform hover:scale-105 transition duration-300 text-white py-2 px-6 rounded-full mt-3 shadow-md"
                         >
                         Order Now
                         </button>

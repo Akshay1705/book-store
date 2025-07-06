@@ -2,8 +2,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme{
-    --color-primary: blue;
-    --color-secondary: blue;
+    --color-primary: green;
+    --color-secondary: green;
 }
 
 html {

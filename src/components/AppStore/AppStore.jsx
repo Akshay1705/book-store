@@ -2,27 +2,17 @@ import React from 'react'
 import BoardImg from '../../assets/website/board.png'
 import PlayStoreImg from '../../assets/play_store.png'
 import AppStoreImg from '../../assets/app_store.png'
-const Bannerbg = {
-  backgroundImage: `url(${BoardImg})`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  height: '100%',
-  width: '100%',
-}
 const AppStore = () => {
   return (
   <>
-    <div className='bg-gray-100 dark:bg-gray-800 text-white py-10 flex justify-center items-center'
-    style={Bannerbg}
-    >
+    <div className='bg-green-100 dark:bg-gray-800 text-white py-10 flex justify-center items-center'>
       <div className='container'>
         {/* banner container */}
         <div className='space-y-6 max-w-xl mx-auto '>
           {/* banner heading */}
           <h1 
           data-aos="slide-up"
-          className='text-2xl text-center sm:text-4xl font-semibold'
+          className='text-2xl text-black text-center sm:text-4xl dark:text-white font-semibold'
           >Read Books at your fingertips
           </h1>
           {/* applestore playstore image */}

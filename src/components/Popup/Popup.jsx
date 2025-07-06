@@ -1,42 +1,59 @@
-import React from 'react'
-import { IoCloseOutline } from 'react-icons/io5'
+import React from 'react';
+import { IoCloseOutline } from 'react-icons/io5';
 
-const Popup = ({orderPopup,handleOrderPopup}) => {
+const Popup = ({ orderPopup, handleOrderPopup }) => {
   return (
     <>
-    {
-        orderPopup && (<div className='h-screen w-screen fixed top-0 left-0 z-20 backdrop-blur-sm bg-black/50'>
-            <div className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900 dark:text-white duration-200 p-4 rounded-md shadow-md w-[300px] '>
-                {/* header */}
-                <div className='flex items-center justify-between'>
-                    <h1>Order Your Book</h1>
-                    <IoCloseOutline className='text-2xl cursor-pointer'
-                    onClick={()=> handleOrderPopup(false)}
-                    />
-                </div>
-                {/* form body */}
-                <div className='mt-4'>
-                    <input type="text" placeholder='Name'
-                    className='w-full p-2 rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4'
-                    />
-                    <input type="email" placeholder='Email'
-                    className='w-full p-2 rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4'
-                    />
-                    <input type="text" placeholder='Address'
-                    className='w-full p-2 rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4'
-                    />
-                    <div className='flex justify-center'>
-                        <button
-                        className="bg-primary text-white py-2 px-8 rounded-full mt-4 ">
-                        Order Now
-                        </button> 
-                    </div>
-                </div>
+      {orderPopup && (
+        <div className="h-screen w-screen fixed top-0 left-0 z-20 backdrop-blur-sm bg-black/50">
+          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900 dark:text-white duration-200 p-6 rounded-xl shadow-lg w-[320px] sm:w-[360px]">
+            
+            {/* Header */}
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-semibold">Order Your Adventure Book</h2>
+              <IoCloseOutline
+                className="text-2xl cursor-pointer hover:text-red-500"
+                onClick={() => handleOrderPopup(false)}
+              />
             </div>
-        </div>)
-    }
-    </>
-  )
-}
 
-export default Popup
+            {/* Form Body */}
+            <form className="flex flex-col gap-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Full Name"
+                autoComplete="off"
+                className="w-full p-2 rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email Address"
+                autoComplete="off"
+                className="w-full p-2 rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800"
+              />
+              <input
+                type="text"
+                name="address"
+                placeholder="Shipping Address"
+                autoComplete="off"
+                className="w-full p-2 rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800"
+              />
+
+              {/* Button */}
+              <button
+                type="submit"
+                className="bg-green-600 dark:bg-blue-600 hover:bg-opacity-90 transition duration-200 text-white py-2 px-6 rounded-full mt-2 shadow-md"
+              >
+                Place Order
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+export default Popup;

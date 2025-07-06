@@ -5,7 +5,6 @@ import Banner from './components/Banner/Banner.jsx'
 import AppStore from './components/AppStore/AppStore.jsx'
 import AllBooks from './components/AllBooks/AllBooks.jsx'
 import Testinomial from './components/Testimonial/Testinomial.jsx'
-import Footer from './components/Footer/Footer.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React from 'react';
@@ -35,10 +34,9 @@ const App = () => {
     <Hero handleOrderPopup = {handleOrderPopup}/>
     <BestBooks handleOrderPopup = {handleOrderPopup}/>
     <Banner/>
-    <AppStore/>
     <AllBooks/>
     <Testinomial/>
-    <Footer/>
+    <AppStore/>
     <Popup handleOrderPopup = {handleOrderPopup}
     orderPopup={orderPopup}/>
     </div>
