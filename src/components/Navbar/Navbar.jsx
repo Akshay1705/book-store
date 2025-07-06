@@ -35,11 +35,16 @@ const Navbar = ({handleOrderPopup}) => {
         <div className="py-3 max-w-screen-xl mx-auto">
             <div className="flex justify-between items-center px-4">
                 <div>
-                    <a href="#"
-                        className='transition-transform duration-300 hover:scale-110'>
-                        <img src={Logo} alt="asc"
-                        className='w-15 h-15' />
-                    </a>
+                <a href="#"
+                className="flex items-center gap-2 transition-transform duration-300 hover:scale-105"
+                >
+                    <img src={Logo} alt="The Adventure Bookstore Logo"
+                        className="w-10 h-10 object-contain"
+                    />
+                    <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
+                        The Adventure Bookstore
+                    </h2>
+                </a>
                 </div>
                 <div className='flex items-center justify-between gap-4 font-semibold ]'>
                     {/* dark light theam */}

@@ -1,10 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:is(.dark *));
 
-@theme{
-    --color-primary: green;
-    --color-secondary: green;
-}
 
 html {
     scroll-behavior: smooth;

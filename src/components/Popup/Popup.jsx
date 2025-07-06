@@ -24,21 +24,21 @@ const Popup = ({ orderPopup, handleOrderPopup }) => {
                 name="name"
                 placeholder="Your Full Name"
                 autoComplete="off"
-                className="w-full p-2 rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800"
+                className="w-full p-2 rounded-full text-gray-600 dark:text-gray-300 border border-gray-300 dark:border-gray-800 dark:bg-gray-800"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Your Email Address"
                 autoComplete="off"
-                className="w-full p-2 rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800"
+                className="w-full p-2 rounded-full text-gray-600 dark:text-gray-300 border border-gray-300 dark:border-gray-600 dark:bg-gray-800"
               />
               <input
                 type="text"
                 name="address"
                 placeholder="Shipping Address"
                 autoComplete="off"
-                className="w-full p-2 rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800"
+                className="w-full p-2 rounded-full text-gray-600 dark:text-gray-300 border border-gray-300 dark:border-gray-600 dark:bg-gray-800"
               />
 
               {/* Button */}
