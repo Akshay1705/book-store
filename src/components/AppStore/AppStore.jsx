@@ -10,13 +10,11 @@ const AppStore = () => {
         <div className='space-y-6 max-w-xl mx-auto '>
           {/* banner heading */}
           <h1 
-          data-aos="slide-up"
           className='text-2xl text-black text-center sm:text-4xl dark:text-white font-semibold'
           >Read Books at your fingertips
           </h1>
           {/* applestore playstore image */}
           <div 
-          data-aos="slide-up"
           className='flex flex-wrap justify-center items-center gap-4 lg:gap-6'>
             <a href="/#">
               <img 
