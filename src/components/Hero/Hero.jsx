@@ -51,7 +51,7 @@ const Hero = () => {
                             </a>
                         </div>
                         <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 mr-10 ml-10'>
-                            <div className='h-[300px] sm:h-[450px] overflow-hidden mr-5'>
+                            <div className='h-[300px] sm:h-[450px] overflow-hidden'>
                                 <img data-aos="zoom-in" data-aos-once="true" src={imageId} alt="" className="h-full min-w-auto object-contain mx-auto" />
                             </div>
                             <div className='flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[20px] lg:-right-1'>
