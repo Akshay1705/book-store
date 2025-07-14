@@ -35,10 +35,10 @@ const Hero = ({handleOrderPopup}) => {
   return (
     <>
         <div
-            className='min-h-[550px] sm:min-h-[650px] bg-green-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 mx-10'
+            className='min-h-[550px] sm:min-h-[650px] bg-green-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200'
         >
-            <div className="container mt-0 pt-0">
-                <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-4 sm:gap-8 mt-2">
+            <div className="container mt-0 pt-0 mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-4 sm:gap-8 mt-2 ml-10">
                     {/* text content selection */}
                     <div className='flex flex-col justify-center gap-4 pt-6 sm:pt-0 text-center sm:text-left order-2 sm:order-1'>
                         <h1 
@@ -66,7 +66,7 @@ const Hero = ({handleOrderPopup}) => {
                         </div>
                     </div>
                     {/* image selection */}
-                    <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 '>
+                    <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 mr-10'>
                         {/* main image */}
                         <div className='h-[300px] sm:h-[450px] overflow-hidden'>
                             <img 
