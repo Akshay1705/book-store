@@ -37,7 +37,7 @@ const Hero = ({handleOrderPopup}) => {
         <div
             className='min-h-[550px] sm:min-h-[650px] bg-green-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200'
         >
-            <div className="container mt-0 pt-0 mx-auto">
+            <div className="container mt-0 pt-0">
                 <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-4 sm:gap-8 mt-2 ml-10">
                     {/* text content selection */}
                     <div className='flex flex-col justify-center gap-4 pt-6 sm:pt-0 text-center sm:text-left order-2 sm:order-1'>
