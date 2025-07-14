@@ -86,14 +86,20 @@ var settings = {
         <div className="container">
             {/* header */}
             <div 
-            data-aos="slide-up"
-            className="text-center mb-20 max-w-[400px] mx-auto">
-                <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-green-700 dark:from-blue-700  to-green-500 dark:to-blue-500 mb-2">
-                What Our Customers Says
-                </p>
-                <h1 className="text-3xl font-bold">Testinomials</h1>
-                <p className="text-xs text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quas fugit quasi vitae error explicabo sapiente. Incidunt officiis consectetur aliquid.</p>
+              data-aos="slide-up"
+              className="text-center mb-20 max-w-[500px] mx-auto"
+            >
+              <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-green-700 dark:from-blue-700  to-green-500 dark:to-blue-500 mb-2">
+                What Our Adventurous Readers Say
+              </p>
+              <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
+                Book Trails & Tales
+              </h1>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                Hear from fellow explorers who've journeyed through thrilling pages, discovered hidden gems, and fueled their wanderlust—one book at a time.
+              </p>
             </div>
+
             {/* testimonials cards */}
             <div
             data-aos="zoom-in"

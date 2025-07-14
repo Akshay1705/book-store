@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import Book1 from '../../assets/books/book1.png'
-import Book2 from '../../assets/books/book2.jpg'
+import Book2 from '../../assets/books/book2.png'
 import Book3 from '../../assets/books/book3.webp'
 
 const ImageList = [
@@ -14,9 +14,9 @@ const ImageList = [
   {
     id: 2,
     img: Book2,
-    title: "Adventure",
+    title: "The Adventure Begins",
     description:
-      "Adventure is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.",
+      "The Adventure Begins is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.",
   },
   {
     id: 4,
@@ -30,8 +30,8 @@ const ImageList = [
 
 const Hero = ({handleOrderPopup}) => {
     const [imageId,setImageId] = useState(Book2);
-    const [title , setTitle] = useState('Adventure');
-    const [description , setDescription] = useState('Adventure is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.');
+    const [title , setTitle] = useState('The Adventure Begins');
+    const [description , setDescription] = useState('The Adventure Begins is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.');
   return (
     <>
         <div

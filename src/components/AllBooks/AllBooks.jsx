@@ -1,6 +1,6 @@
 import React from 'react'
 import Book1 from '../../assets/books/book1.png'
-import Book2 from '../../assets/books/book2.jpg'
+import Book2 from '../../assets/books/book2.png'
 import Book3 from '../../assets/books/book3.webp'
 import Book4 from '../../assets/books/book4.jpg'
 import Book5 from '../../assets/books/book5.jpg'
@@ -20,7 +20,7 @@ const BooksData = [
   {
     id: 2,
     img: Book2,
-    title: "Adventure",
+    title: "The Adventure Begins",
     rating: 4.5,
     author: "Jack London",
   },

@@ -11,7 +11,7 @@ const AppStore = () => {
           {/* banner heading */}
           <h1 
           className='text-2xl text-black text-center sm:text-4xl dark:text-white font-semibold'
-          >Read Books at your fingertips
+          >Your favorite books, just a tap away.
           </h1>
           {/* applestore playstore image */}
           <div 

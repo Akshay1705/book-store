@@ -1,6 +1,6 @@
 import React from 'react'
 import Img1 from '../../assets/books/book1.png'
-import Img2 from '../../assets/books/book2.jpg'
+import Img2 from '../../assets/books/book2.png'
 import Img3 from '../../assets/books/book3.webp'
 import { FaStar } from "react-icons/fa";
 
@@ -15,9 +15,9 @@ const BooksData = [
       {
         id: 2,
         img: Img2,
-        title: "Adventure",
+        title: "The Adventure Begins",
         description:
-          "Adventure is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.",
+          "The Adventure Begins is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.",
       },
       {
         id: 3,
