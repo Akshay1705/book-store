@@ -66,7 +66,7 @@ const Hero = ({handleOrderPopup}) => {
                         </div>
                     </div>
                     {/* image selection */}
-                    <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 mr-10'>
+                    <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 mr-10 ml-10'>
                         {/* main image */}
                         <div className='h-[300px] sm:h-[450px] overflow-hidden'>
                             <img 
