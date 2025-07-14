@@ -6,7 +6,7 @@ const Popup = ({ orderPopup, handleOrderPopup }) => {
     <>
       {orderPopup && (
         <div className="h-screen w-screen fixed top-0 left-0 z-20 backdrop-blur-sm bg-black/50">
-          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900 dark:text-white duration-200 p-6 rounded-xl shadow-lg w-[320px] sm:w-[360px]">
+          <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900 bg-fixed dark:text-white duration-200 p-6 rounded-xl shadow-lg w-[320px] sm:w-[360px]">
             
             {/* Header */}
             <div className="flex items-center justify-between mb-4">

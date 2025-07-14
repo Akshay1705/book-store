@@ -54,7 +54,7 @@ const Hero = () => {
                             <div className='h-[300px] sm:h-[450px] overflow-hidden mr-5'>
                                 <img data-aos="zoom-in" data-aos-once="true" src={imageId} alt="" className="h-full min-w-auto object-contain mx-auto" />
                             </div>
-                            <div className='flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[20px] lg:-right-1 ml-5'>
+                            <div className='flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[20px] lg:-right-1'>
                                 {
                                     ImageList.map((data) => (
                                         <img
