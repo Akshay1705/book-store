@@ -35,7 +35,7 @@ const Hero = ({handleOrderPopup}) => {
   return (
     <>
         <div
-            className='min-h-[550px] sm:min-h-[650px] bg-green-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200'
+            className='min-h-[550px] sm:min-h-[650px] bg-green-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 mx-10'
         >
             <div className="container mt-0 pt-0">
                 <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-4 sm:gap-8 mt-2">
