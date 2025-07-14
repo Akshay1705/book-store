@@ -27,83 +27,57 @@ const ImageList = [
   },
 ];
 
+const Hero = () => {
+    const [imageId, setImageId] = useState(Book2);
+    const [title, setTitle] = useState('The Adventure Begins');
+    const [description, setDescription] = useState('The Adventure Begins is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.');
 
-const Hero = ({handleOrderPopup}) => {
-    const [imageId,setImageId] = useState(Book2);
-    const [title , setTitle] = useState('The Adventure Begins');
-    const [description , setDescription] = useState('The Adventure Begins is a thrilling tale of courage, discovery, and survival. From towering mountains to hidden jungles, it follows a daring journey into the unknown where every step holds danger—and destiny. Perfect for those who crave the rush of the wild.');
-  return (
-    <>
-        <div
-            className='min-h-[550px] sm:min-h-[650px] bg-green-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200'
-        >
-            <div className="container mt-0 pt-0">
-                <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-4 sm:gap-8 mt-2 ml-10 mr-10">
-                    {/* text content selection */}
-                    <div className='flex flex-col justify-center gap-4 pt-6 sm:pt-0 text-center sm:text-left order-2 sm:order-1'>
-                        <h1 
-                        data-aos="zoom-out"
-                        data-aos-duration="500"
-                        className='text-5xl sm:text-6xl lg:text-7xl font-bold'>
-                            {title}
-                        </h1>
-                        <p 
-                        data-aos="slide-up"
-                        data-aos-duration="500"
-                        data-aos-delay="100"
-                        className='text-sm'>
-                            {description}
-                        </p>
-                        <a href="/#all">
-                        <button 
-                        data-aos="zoom-in"
-                        data-aos-duration="500"
-                        className="bg-green-600 dark:bg-blue-600 hover:bg-opacity-90 transform hover:scale-105 transition duration-300 text-white py-2 px-6 rounded-full mt-3 shadow-md"
-                        >
-                        Exproller
-                        </button>
-                        </a>
-                    </div>
-                    {/* image selection */}
-                    <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 mr-10 ml-10'>
-                        {/* main image */}
-                        <div className='h-[300px] sm:h-[450px] overflow-hidden mr-5'>
-                            <img 
-                            data-aos="zoom-in"
-                            data-aos-once="true"
-                            src={imageId} 
-                            alt=""  
-                            className="h-full min-w-auto object-contain mx-auto" />
+    return (
+        <>
+            <div className='min-h-[550px] sm:min-h-[650px] bg-green-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200'>
+                <div className="container mt-0 pt-0">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-4 sm:gap-8 mt-2 ml-10 mr-10">
+                        <div className='flex flex-col justify-center gap-4 pt-6 sm:pt-0 text-center sm:text-left order-2 sm:order-1'>
+                            <h1 data-aos="zoom-out" data-aos-duration="500" className='text-5xl sm:text-6xl lg:text-7xl font-bold'>
+                                {title}
+                            </h1>
+                            <p data-aos="slide-up" data-aos-duration="500" data-aos-delay="100" className='text-sm'>
+                                {description}
+                            </p>
+                            <a href="/#all">
+                                <button data-aos="zoom-in" data-aos-duration="500" className="bg-green-600 dark:bg-blue-600 hover:bg-opacity-90 transform hover:scale-105 transition duration-300 text-white py-2 px-6 rounded-full mt-3 shadow-md">
+                                    Explore
+                                </button>
+                            </a>
                         </div>
-                        {/* other image */}
-                        <div className='flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[20px] lg:-right-1 ml-5'>
-                            {
-                                ImageList.map((data) => (
-                                    <img 
-                                        data-aos="zoom-in"
-                                        data-aos-once="true"
-                                        src={data.img} 
-                                        key={data.id} 
-                                        className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"
-                                        onClick={
-                                            ()=>{
-                                                setImageId(
-                                                    data.id === 1 ? Book1 : data.id === 2 ? Book2 : Book3
-                                                  );
-                                                  setTitle(data.title);
-                                                  setDescription(data.description);
-                                            }
-                                        }
-                                    />
-                                ))
-                            }
+                        <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 mr-10 ml-10'>
+                            <div className='h-[300px] sm:h-[450px] overflow-hidden mr-5'>
+                                <img data-aos="zoom-in" data-aos-once="true" src={imageId} alt="" className="h-full min-w-auto object-contain mx-auto" />
+                            </div>
+                            <div className='flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[20px] lg:-right-1 ml-5'>
+                                {
+                                    ImageList.map((data) => (
+                                        <img
+                                            data-aos="zoom-in"
+                                            data-aos-once="true"
+                                            src={data.img}
+                                            key={data.id}
+                                            className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"
+                                            onClick={() => {
+                                                setImageId(data.img);
+                                                setTitle(data.title);
+                                                setDescription(data.description);
+                                            }}
+                                        />
+                                    ))
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }
 
-export default Hero
+export default Hero;

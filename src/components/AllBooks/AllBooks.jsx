@@ -105,7 +105,7 @@ const AllBooks = () => {
           </div>
           <div className="flex justify-center">
             <button className="text-center mt-10 cursor-pointer  bg-green-600 dark:bg-blue-600 text-white py-1 px-5 rounded-md">
-              <a href="/#">Exproller</a>
+              <a href="/#">Explore</a>
             </button>
           </div>
         </div>
