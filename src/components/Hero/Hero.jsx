@@ -54,16 +54,15 @@ const Hero = ({handleOrderPopup}) => {
                         className='text-sm'>
                             {description}
                         </p>
-                        <div>
+                        <a href="/#all">
                         <button 
-                        onClick={handleOrderPopup}
                         data-aos="zoom-in"
                         data-aos-duration="500"
                         className="bg-green-600 dark:bg-blue-600 hover:bg-opacity-90 transform hover:scale-105 transition duration-300 text-white py-2 px-6 rounded-full mt-3 shadow-md"
                         >
-                        Order Now
+                        Exproller
                         </button>
-                        </div>
+                        </a>
                     </div>
                     {/* image selection */}
                     <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 mr-10 ml-10'>
