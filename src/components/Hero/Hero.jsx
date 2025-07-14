@@ -67,7 +67,7 @@ const Hero = ({handleOrderPopup}) => {
                     {/* image selection */}
                     <div className='min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 mr-10 ml-10'>
                         {/* main image */}
-                        <div className='h-[300px] sm:h-[450px] overflow-hidden'>
+                        <div className='h-[300px] sm:h-[450px] overflow-hidden mr-5'>
                             <img 
                             data-aos="zoom-in"
                             data-aos-once="true"
@@ -76,7 +76,7 @@ const Hero = ({handleOrderPopup}) => {
                             className="h-full min-w-auto object-contain mx-auto" />
                         </div>
                         {/* other image */}
-                        <div className='flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[20px] lg:-right-1'>
+                        <div className='flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[20px] lg:-right-1 ml-5'>
                             {
                                 ImageList.map((data) => (
                                     <img 
